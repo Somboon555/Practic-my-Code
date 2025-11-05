@@ -1,0 +1,1 @@
+print("diferrent_demainders:",len({int(input("number:")) % 42 for _ in range(10)}))

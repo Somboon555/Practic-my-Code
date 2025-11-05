@@ -1,0 +1,5 @@
+from itertools import combinations
+เอา combinations จากโมดูล itertools มาใช้
+
+combinations(r, 2) จะสร้าง ทุกคู่ของสมาชิกใน r โดยไม่สนใจลำดับ
+

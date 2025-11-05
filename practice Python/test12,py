@@ -1,0 +1,21 @@
+#dawarves = [int(input("dawarves:")) for _ in range(9)
+dawarves= [20, 7, 23, 19, 10, 8, 13, 5, 12]
+
+sum_dawarves = sum(dawarves)
+
+Bool = False 
+for i in range(9):
+    for j in range(i+1,9):
+        if dawarves[i] + dawarves[j] == sum_dawarves-100:
+            #print("imposters are",dawarves[i],'and',dawarves[j])
+            imposters_1,imposters_2 = dawarves[i] , dawarves[j]
+
+            Bool = True
+            break
+    if Bool:
+        break
+dawarves.remove(imposters_1)
+dawarves.remove(imposters_2)
+
+for i in dawarves:
+    print(f"The_ture_dawarves number:{i}")
