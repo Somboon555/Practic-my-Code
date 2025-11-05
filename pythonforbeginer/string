@@ -1,0 +1,65 @@
+การสร้างและเข้าถึง string
+python
+คัดลอก
+แก้ไข
+s = "Hello, Somboon!"    # การสร้าง string
+s[0]                     # 'H' → เข้าถึงตัวอักษรตัวแรก
+s[-1]                    # '!' → เข้าถึงตัวอักษรตัวสุดท้าย
+s[0:5]                   # 'Hello' → slice, ตัวอักษร 0 ถึง 4
+len(s)                    # 15 → นับจำนวนตัวอักษร
+
+
+การแก้ไขและจัดการ string
+python
+คัดลอก
+แก้ไข
+s.upper()                 # 'HELLO, SOMBOON!' → แปลงเป็นตัวพิมพ์ใหญ่
+s.lower()                 # 'hello, somboon!' → แปลงเป็นตัวพิมพ์เล็ก
+s.title()                 # 'Hello, Somboon!' → ตัวแรกของคำเป็นพิมพ์ใหญ่
+s.capitalize()            # 'Hello, somboon!' → ตัวแรกของ string เป็นพิมพ์ใหญ่
+s.strip()                 # ลบช่องว่างด้านหน้า/หลัง
+s.lstrip()                # ลบช่องว่างด้านซ้าย
+s.rstrip()                # ลบช่องว่างด้านขวา
+s.replace("Somboon", "John")  # แทนที่คำ
+
+
+
+การค้นหาและตรวจสอบ string
+python
+คัดลอก
+แก้ไข
+s.find("Som")              # 7 → ตำแหน่งเริ่มต้นของ "Som" (-1 ถ้าไม่มี)
+s.index("Som")             # 7 → เหมือน find แต่ถ้าไม่เจอจะ error
+s.startswith("Hello")      # True → ตรวจสอบขึ้นต้น
+s.endswith("!")            # True → ตรวจสอบลงท้าย
+"Som" in s                 # True → ตรวจสอบว่ามีคำนี้อยู่ใน string
+"Tom" not in s             # True → ตรวจสอบว่าคำนี้ไม่มีอยู่
+s.count("o")               # 3 → นับจำนวนตัวอักษรหรือคำ
+
+
+
+การแบ่งและรวม string
+python
+คัดลอก
+แก้ไข
+s.split(",")               # ['Hello', ' Somboon!'] → แบ่ง string
+s.split()                  # ['Hello,', 'Somboon!'] → แบ่งตามช่องว่าง
+"-".join(["2025","08","13"])  # '2025-08-13' → รวม list เป็น string
+
+
+
+ การจัดรูปแบบ string
+python
+คัดลอก
+แก้ไข
+name = "Somboon"
+age = 18
+
+# แบบเก่า
+"Name: %s, Age: %d" % (name, age)
+
+# แบบ str.format()
+"Name: {}, Age: {}".format(name, age)
+
+# แบบ f-string (Python 3.6+)
+f"Name: {name}, Age: {age}"

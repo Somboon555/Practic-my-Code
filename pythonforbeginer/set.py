@@ -1,0 +1,16 @@
+x={1,2,3,4,5,6,7}
+y={2,3,4,5,6,7}
+""""
+x=x.difference(y)
+print(x)
+"""
+"""""
+x.difference_update(y)
+print(x)
+"""""
+"""""
+x.intersection_update(y)
+print(x)
+"""""
+print(x.issubset(y))
+print(x[1])

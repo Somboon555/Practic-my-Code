@@ -1,0 +1,18 @@
+POV SEC
+x.sort เรียงน้อยไปมาก
+x.reverse มากไปปน้อย
+x.append(e) เพื่มค่า
+x.insert(1,s) เเทนที่
+x.remove(q) ลบq
+x.pop ลบค่าล่าสุด
+del x ลบตัวเเปรไปเลย
+x.clear() ลบเเต่ตัวเเปรอยู่
+x.count(r) นับ r มีกี่ตัว
+x.index(r) บอกตำเเหน่งr
+name="".join(x) นำ 'a' 'b' เป็น "ab"
+x.add() เพิ่มเเบบสุ่ม
+x.uppdate เพิ่มค่าจำมากโดยใช้ตัวเเปล
+x.discard ลบ ไม่eror
+set
+X=x.difference(y)
+x.difference_update(y)
